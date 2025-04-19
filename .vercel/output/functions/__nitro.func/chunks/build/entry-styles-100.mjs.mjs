@@ -1,0 +1,4 @@
+const error_vue_vue_type_style_index_0_scoped_30dc331b_lang = ".error-container[data-v-30dc331b]{align-items:center;background:linear-gradient(135deg,#1e293b,#3b82f6);display:flex;height:100vh;justify-content:center}.error-card[data-v-30dc331b]{background:#fff;border-radius:12px;box-shadow:0 10px 30px #0003}.error-code[data-v-30dc331b]{color:#ef4444;font-size:6rem;font-weight:700;text-shadow:2px 2px 10px rgba(239,68,68,.5)}.error-message[data-v-30dc331b]{color:#1e293b;font-size:2rem;font-weight:600;margin-top:10px}.error-description[data-v-30dc331b]{color:#4b5563;font-size:1.1rem;margin-top:10px;padding:0 10px}.error-btn[data-v-30dc331b]{border-radius:8px;font-size:1rem;font-weight:600;padding:12px 20px;text-transform:uppercase}";
+
+export { error_vue_vue_type_style_index_0_scoped_30dc331b_lang as e };
+//# sourceMappingURL=entry-styles-100.mjs.mjs.map
