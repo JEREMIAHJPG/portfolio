@@ -69,9 +69,9 @@ export default defineNuxtConfig({
       }
     },
     public: {
-      linkedInUrl: 'https://linkedin.com/in/jeremiah-chukwuebuka-5893a3168/',
-      telegramUrl: 'https://t.me/Jefocus',
-      whatsappUrl: 'https://wa.me/+2348149481777',
+      linkedInUrl: process.env.LINKEDIN_URL,
+      telegramUrl: process.env.TELEGRAM_URL,
+      whatsappUrl: process.env.WHATSAPP_URL,
     }
   },
 
