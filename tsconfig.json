@@ -1,0 +1,25 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "#app": [".nuxt/app"],
+      "#assets": [".nuxt/assets"],
+      "#components": [".nuxt/components"],
+    },
+    "jsx": "preserve",
+    "lib": ["ESNext", "DOM"]
+  },
+  "types": ["@nuxt/schema", "h3", "@types/node", "pinia", "@vite-pwa/nuxt", "#imports"],
+  "include": ["./**/*.ts", "./**/*.d.ts", "./**/*.tsx", "./**/*.vue", ".nuxt", "types/**/*.d.ts", "plugins/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
