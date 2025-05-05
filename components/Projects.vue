@@ -16,7 +16,7 @@
            >
              View page           
            </v-btn>
-           
+
             <v-btn color="success"
             size="large" rounded 
             class="position-fixed bottom-0 callbtnwatsapp" 
@@ -37,6 +37,5 @@ const projects = [
   { title: 'ASASTRA – Sign-up form page', iframe: 'https://asastra.vercel.app/Signupformpage', description: 'Built with Nuxt3 + Firebase', github: 'https://github.com/JEREMIAHJPG/ASASTRA_NEW.git'},
   { title: 'ASASTRA – Login form page', iframe: 'https://asastra.vercel.app/Loginpage', description: 'Built with Nuxt3 + Firebase', github: 'https://github.com/JEREMIAHJPG/ASASTRA_NEW.git'},
   { title: 'ASASTRA – Terms and Conditions policy page', iframe: 'https://asastra.vercel.app/termsandconditions', description: 'Built with Nuxt3 + Firebase', github: 'https://github.com/JEREMIAHJPG/ASASTRA_NEW.git'},
-  { title: 'ASASTRA – Privacy policy page', iframe: 'https://asastra.vercel.app/privacypolicy', description: 'Built with Nuxt3 + Firebase', github: 'https://github.com/JEREMIAHJPG/ASASTRA_NEW.git'},
 ];
 </script>

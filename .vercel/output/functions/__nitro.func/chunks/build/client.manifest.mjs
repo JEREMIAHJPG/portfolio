@@ -1,4 +1,24 @@
 const client_manifest = {
+  "layouts/default.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "ykR5oW-0.js",
+    "name": "default",
+    "src": "layouts/default.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "css": []
+  },
+  "default.BG270sNn.css": {
+    "file": "default.BG270sNn.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  },
   "node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot": {
     "resourceType": "font",
     "mimeType": "font/eot",
@@ -28,11 +48,13 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Dlrtmg-R.js",
+    "file": "nnSp1bj2.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
-    "dynamicImports": [],
+    "dynamicImports": [
+      "layouts/default.vue"
+    ],
     "css": [
       "entry.DblFwUeB.css"
     ],
@@ -75,7 +97,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "De0kin_b.js",
+    "file": "wiZ0DGUL.js",
     "name": "About",
     "src": "pages/About.vue",
     "isDynamicEntry": true,
@@ -95,7 +117,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CixT7CuN.js",
+    "file": "Cp7Y99SI.js",
     "name": "CookiesPolicy",
     "src": "pages/CookiesPolicy.vue",
     "isDynamicEntry": true,
@@ -106,26 +128,6 @@ const client_manifest = {
   },
   "CookiesPolicy.CAxLNpDg.css": {
     "file": "CookiesPolicy.CAxLNpDg.css",
-    "resourceType": "style",
-    "prefetch": true,
-    "preload": true
-  },
-  "pages/index.vue": {
-    "resourceType": "script",
-    "module": true,
-    "prefetch": true,
-    "preload": true,
-    "file": "CFr-btmv.js",
-    "name": "index",
-    "src": "pages/index.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/nuxt/dist/app/entry.js"
-    ],
-    "css": []
-  },
-  "index.CQ68P0KT.css": {
-    "file": "index.CQ68P0KT.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true

@@ -1,4 +1,4 @@
-import { shallowReactive, reactive, effectScope, getCurrentScope, hasInjectionContext, getCurrentInstance as getCurrentInstance$1, inject as inject$1, toRef, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw, watch, onScopeDispose, computed, watchEffect, toRefs, capitalize, unref, Fragment, isVNode, Comment, ref, warn, provide, h, defineComponent as defineComponent$1, createVNode, mergeProps, camelize, TransitionGroup, Transition, readonly, useId, nextTick, withDirectives, resolveDirective, vShow, resolveDynamicComponent, Text, toDisplayString, markRaw, cloneVNode, Teleport, createTextVNode, withModifiers, vModelText, resolveComponent, render, Suspense, withCtx, useSSRContext, onErrorCaptured, onServerPrefetch, createApp } from 'vue';
+import { shallowReactive, reactive, effectScope, getCurrentScope, hasInjectionContext, getCurrentInstance as getCurrentInstance$1, inject as inject$1, toRef, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw, watch, onScopeDispose, computed, watchEffect, toRefs, capitalize, unref, Fragment, isVNode, Comment, ref, warn, provide, h, defineComponent as defineComponent$1, createVNode, mergeProps, camelize, TransitionGroup, Transition, readonly, useId, nextTick, withDirectives, resolveDirective, vShow, resolveDynamicComponent, Text, toDisplayString, markRaw, cloneVNode, Teleport, createTextVNode, withModifiers, vModelText, resolveComponent, render, defineAsyncComponent, Suspense, withCtx, useSSRContext, onErrorCaptured, onServerPrefetch, createApp } from 'vue';
 import { j as createHooks, k as getContext, l as hasProtocol, m as joinURL, w as withQuery, s as sanitizeStatusCode, h as createError$1, n as toRouteMatcher, o as createRouter, q as defu, r as executeAsync } from '../_/nitro.mjs';
 import { shouldHydrate, createPinia, setActivePinia } from 'pinia';
 import { START_LOCATION, createMemoryHistory, createRouter as createRouter$1, useRoute as useRoute$2, RouterView } from 'vue-router';
@@ -396,11 +396,6 @@ const _routes = [
     name: "About",
     path: "/About",
     component: () => import('./About.vue.mjs')
-  },
-  {
-    name: "index",
-    path: "/",
-    component: () => import('./index.vue.mjs')
   },
   {
     name: "CookiesPolicy",
@@ -28187,7 +28182,9 @@ const plugins = [
   router_xzM48dudz8i7nmzwBmzp6Ht9_SIiUsNJVx8nNQoi_do
 ];
 
-const layouts = {};
+const layouts = {
+  default: defineAsyncComponent(() => import('./default.vue.mjs').then((m) => m.default || m))
+};
 
 const LayoutLoader = defineComponent$1({
   name: "LayoutLoader",
