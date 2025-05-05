@@ -393,6 +393,11 @@ function handleHotUpdate(_router, _generateRoutes) {
 }
 const _routes = [
   {
+    name: "About",
+    path: "/About",
+    component: () => import('./About.vue.mjs')
+  },
+  {
     name: "index",
     path: "/",
     component: () => import('./index.vue.mjs')

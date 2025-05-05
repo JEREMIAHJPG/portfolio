@@ -226,8 +226,12 @@ const _sfc_main$4 = {
   __ssrInlineRender: true,
   setup(__props) {
     const projects = [
-      { title: "Full-Stack E-commerce Company App", iframe: "https://asastra.vercel.app", description: "Built with Nuxt3 + Firebase" },
-      { title: "Portfolio Website", iframe: "https://your-portfolio.vercel.app", description: "Designed with Vuetify and SEO in mind" }
+      { title: "ASASTRA – E-Commerce Web App", iframe: "https://asastra.vercel.app", description: "Built with Nuxt3 + Firebase, Vuetify and SEO in mind", github: "https://github.com/JEREMIAHJPG/ASASTRA_NEW.git" },
+      { title: "My Resume Website", iframe: "https://asastra-dev.vercel.app/About", description: "Designed with Vuetify and SEO in mind", github: "https://github.com/JEREMIAHJPG/portfolio.git" },
+      { title: "ASASTRA – Sign-up form page", iframe: "https://asastra.vercel.app/Signupformpage", description: "Built with Nuxt3 + Firebase", github: "https://github.com/JEREMIAHJPG/ASASTRA_NEW.git" },
+      { title: "ASASTRA – Login form page", iframe: "https://asastra.vercel.app/Loginpage", description: "Built with Nuxt3 + Firebase", github: "https://github.com/JEREMIAHJPG/ASASTRA_NEW.git" },
+      { title: "ASASTRA – Terms and Conditions policy page", iframe: "https://asastra.vercel.app/termsandconditions", description: "Built with Nuxt3 + Firebase", github: "https://github.com/JEREMIAHJPG/ASASTRA_NEW.git" },
+      { title: "ASASTRA – Privacy policy page", iframe: "https://asastra.vercel.app/privacypolicy", description: "Built with Nuxt3 + Firebase", github: "https://github.com/JEREMIAHJPG/ASASTRA_NEW.git" }
     ];
     return (_ctx, _push, _parent, _attrs) => {
       const _component_v_container = resolveComponent("v-container");
@@ -236,6 +240,7 @@ const _sfc_main$4 = {
       const _component_v_card = resolveComponent("v-card");
       const _component_v_card_title = resolveComponent("v-card-title");
       const _component_v_card_subtitle = resolveComponent("v-card-subtitle");
+      const _component_v_btn = resolveComponent("v-btn");
       _push(ssrRenderComponent(_component_v_container, _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
@@ -280,6 +285,44 @@ const _sfc_main$4 = {
                                   }),
                                   _: 2
                                 }, _parent5, _scopeId4));
+                                _push5(ssrRenderComponent(_component_v_btn, {
+                                  color: "info",
+                                  size: "large",
+                                  rounded: "",
+                                  class: "position-fixed bottom-0 callbtnlinkedin",
+                                  variant: "elevated",
+                                  href: project.iframe
+                                }, {
+                                  default: withCtx((_5, _push6, _parent6, _scopeId5) => {
+                                    if (_push6) {
+                                      _push6(` View page `);
+                                    } else {
+                                      return [
+                                        createTextVNode(" View page ")
+                                      ];
+                                    }
+                                  }),
+                                  _: 2
+                                }, _parent5, _scopeId4));
+                                _push5(ssrRenderComponent(_component_v_btn, {
+                                  color: "success",
+                                  size: "large",
+                                  rounded: "",
+                                  class: "position-fixed bottom-0 callbtnwatsapp",
+                                  variant: "elevated",
+                                  href: project.github
+                                }, {
+                                  default: withCtx((_5, _push6, _parent6, _scopeId5) => {
+                                    if (_push6) {
+                                      _push6(` GitHub `);
+                                    } else {
+                                      return [
+                                        createTextVNode(" GitHub ")
+                                      ];
+                                    }
+                                  }),
+                                  _: 2
+                                }, _parent5, _scopeId4));
                               } else {
                                 return [
                                   createVNode("iframe", {
@@ -298,7 +341,33 @@ const _sfc_main$4 = {
                                       createTextVNode(toDisplayString(project.description), 1)
                                     ]),
                                     _: 2
-                                  }, 1024)
+                                  }, 1024),
+                                  createVNode(_component_v_btn, {
+                                    color: "info",
+                                    size: "large",
+                                    rounded: "",
+                                    class: "position-fixed bottom-0 callbtnlinkedin",
+                                    variant: "elevated",
+                                    href: project.iframe
+                                  }, {
+                                    default: withCtx(() => [
+                                      createTextVNode(" View page ")
+                                    ]),
+                                    _: 2
+                                  }, 1032, ["href"]),
+                                  createVNode(_component_v_btn, {
+                                    color: "success",
+                                    size: "large",
+                                    rounded: "",
+                                    class: "position-fixed bottom-0 callbtnwatsapp",
+                                    variant: "elevated",
+                                    href: project.github
+                                  }, {
+                                    default: withCtx(() => [
+                                      createTextVNode(" GitHub ")
+                                    ]),
+                                    _: 2
+                                  }, 1032, ["href"])
                                 ];
                               }
                             }),
@@ -324,7 +393,33 @@ const _sfc_main$4 = {
                                     createTextVNode(toDisplayString(project.description), 1)
                                   ]),
                                   _: 2
-                                }, 1024)
+                                }, 1024),
+                                createVNode(_component_v_btn, {
+                                  color: "info",
+                                  size: "large",
+                                  rounded: "",
+                                  class: "position-fixed bottom-0 callbtnlinkedin",
+                                  variant: "elevated",
+                                  href: project.iframe
+                                }, {
+                                  default: withCtx(() => [
+                                    createTextVNode(" View page ")
+                                  ]),
+                                  _: 2
+                                }, 1032, ["href"]),
+                                createVNode(_component_v_btn, {
+                                  color: "success",
+                                  size: "large",
+                                  rounded: "",
+                                  class: "position-fixed bottom-0 callbtnwatsapp",
+                                  variant: "elevated",
+                                  href: project.github
+                                }, {
+                                  default: withCtx(() => [
+                                    createTextVNode(" GitHub ")
+                                  ]),
+                                  _: 2
+                                }, 1032, ["href"])
                               ]),
                               _: 2
                             }, 1024)
@@ -362,7 +457,33 @@ const _sfc_main$4 = {
                                   createTextVNode(toDisplayString(project.description), 1)
                                 ]),
                                 _: 2
-                              }, 1024)
+                              }, 1024),
+                              createVNode(_component_v_btn, {
+                                color: "info",
+                                size: "large",
+                                rounded: "",
+                                class: "position-fixed bottom-0 callbtnlinkedin",
+                                variant: "elevated",
+                                href: project.iframe
+                              }, {
+                                default: withCtx(() => [
+                                  createTextVNode(" View page ")
+                                ]),
+                                _: 2
+                              }, 1032, ["href"]),
+                              createVNode(_component_v_btn, {
+                                color: "success",
+                                size: "large",
+                                rounded: "",
+                                class: "position-fixed bottom-0 callbtnwatsapp",
+                                variant: "elevated",
+                                href: project.github
+                              }, {
+                                default: withCtx(() => [
+                                  createTextVNode(" GitHub ")
+                                ]),
+                                _: 2
+                              }, 1032, ["href"])
                             ]),
                             _: 2
                           }, 1024)
@@ -408,7 +529,33 @@ const _sfc_main$4 = {
                                 createTextVNode(toDisplayString(project.description), 1)
                               ]),
                               _: 2
-                            }, 1024)
+                            }, 1024),
+                            createVNode(_component_v_btn, {
+                              color: "info",
+                              size: "large",
+                              rounded: "",
+                              class: "position-fixed bottom-0 callbtnlinkedin",
+                              variant: "elevated",
+                              href: project.iframe
+                            }, {
+                              default: withCtx(() => [
+                                createTextVNode(" View page ")
+                              ]),
+                              _: 2
+                            }, 1032, ["href"]),
+                            createVNode(_component_v_btn, {
+                              color: "success",
+                              size: "large",
+                              rounded: "",
+                              class: "position-fixed bottom-0 callbtnwatsapp",
+                              variant: "elevated",
+                              href: project.github
+                            }, {
+                              default: withCtx(() => [
+                                createTextVNode(" GitHub ")
+                              ]),
+                              _: 2
+                            }, 1032, ["href"])
                           ]),
                           _: 2
                         }, 1024)
@@ -670,7 +817,7 @@ const _sfc_main = {
     const drawer = ref(false);
     const filteredSidebars = [
       { pagename: "Home", routename: "/", materialdesigniconname: "home" },
-      { pagename: "About", routename: "/about", materialdesigniconname: "account" }
+      { pagename: "About", routename: "/About", materialdesigniconname: "account" }
       //    { pagename: 'Projects', routename: '/projects', materialdesigniconname: 'briefcase' },
       //     { pagename: 'Contact', routename: '/contact', materialdesigniconname: 'email' }
     ];
@@ -708,7 +855,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   _push(ssrRenderComponent(_component_v_app, _attrs, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(`<div class="background-container" data-v-8b2aee7e${_scopeId}><div class="background-galaxy" data-v-8b2aee7e${_scopeId}></div></div>`);
+        _push2(`<div class="background-container" data-v-24b99dfb${_scopeId}><div class="background-galaxy" data-v-24b99dfb${_scopeId}></div></div>`);
         _push2(ssrRenderComponent(_component_v_navigation_drawer, {
           modelValue: $setup.drawer,
           "onUpdate:modelValue": ($event) => $setup.drawer = $event,
@@ -732,7 +879,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                           }, {
                             default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                               if (_push6) {
-                                _push6(`<img${ssrRenderAttr("src", _imports_0)} alt="Logo" data-v-8b2aee7e${_scopeId5}>`);
+                                _push6(`<img${ssrRenderAttr("src", _imports_0)} alt="Logo" data-v-24b99dfb${_scopeId5}>`);
                               } else {
                                 return [
                                   createVNode("img", {
@@ -1376,7 +1523,7 @@ _sfc_main.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/index.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
-const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-8b2aee7e"]]);
+const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-24b99dfb"]]);
 
 export { index as default };
 //# sourceMappingURL=index.vue.mjs.map
