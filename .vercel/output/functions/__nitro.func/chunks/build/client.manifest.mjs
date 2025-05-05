@@ -4,7 +4,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "ykR5oW-0.js",
+    "file": "Edi5PcEx.js",
     "name": "default",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
@@ -13,8 +13,8 @@ const client_manifest = {
     ],
     "css": []
   },
-  "default.BG270sNn.css": {
-    "file": "default.BG270sNn.css",
+  "default.C_xiqD5f.css": {
+    "file": "default.C_xiqD5f.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -48,7 +48,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "nnSp1bj2.js",
+    "file": "g7g2bBxo.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -97,7 +97,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "wiZ0DGUL.js",
+    "file": "yu2M-b0U.js",
     "name": "About",
     "src": "pages/About.vue",
     "isDynamicEntry": true,
@@ -117,7 +117,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Cp7Y99SI.js",
+    "file": "CN4TZ_Oh.js",
     "name": "CookiesPolicy",
     "src": "pages/CookiesPolicy.vue",
     "isDynamicEntry": true,
@@ -128,6 +128,26 @@ const client_manifest = {
   },
   "CookiesPolicy.CAxLNpDg.css": {
     "file": "CookiesPolicy.CAxLNpDg.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  },
+  "pages/index.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "CHoICXWn.js",
+    "name": "index",
+    "src": "pages/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "css": []
+  },
+  "index.CGT4C3A-.css": {
+    "file": "index.CGT4C3A-.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true

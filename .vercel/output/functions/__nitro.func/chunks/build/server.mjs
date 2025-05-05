@@ -398,6 +398,11 @@ const _routes = [
     component: () => import('./About.vue.mjs')
   },
   {
+    name: "index",
+    path: "/",
+    component: () => import('./index.vue.mjs')
+  },
+  {
     name: "CookiesPolicy",
     path: "/CookiesPolicy",
     component: () => import('./CookiesPolicy.vue.mjs')
