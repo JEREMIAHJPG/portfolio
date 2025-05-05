@@ -94,7 +94,7 @@ export default {
 
     const filteredSidebars = [
       { pagename: 'Home', routename: '/', materialdesigniconname: 'home' },
-      { pagename: 'About', routename: '/about', materialdesigniconname: 'account' },
+      { pagename: 'About', routename: '/About', materialdesigniconname: 'account' },
   //    { pagename: 'Projects', routename: '/projects', materialdesigniconname: 'briefcase' },
  //     { pagename: 'Contact', routename: '/contact', materialdesigniconname: 'email' }
     ];
