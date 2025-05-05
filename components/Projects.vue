@@ -34,7 +34,7 @@
 const projects = [
   { title: 'ASASTRA – E-Commerce Web App', iframe: 'https://asastra.vercel.app', description: 'Built with Nuxt3 + Firebase, Vuetify and SEO in mind', github: 'https://github.com/JEREMIAHJPG/ASASTRA_NEW.git'},
   { title: 'My Resume Website', iframe: 'https://asastra-dev.vercel.app/About', description: 'Designed with Vuetify and SEO in mind', github: 'https://github.com/JEREMIAHJPG/portfolio.git'},
-  { title: 'ASASTRA – Sign-up form page', iframe: 'https://asastra.vercel.app/Signupformpage', description: 'Built with Nuxt3 + Firebase', github: 'https://github.com/JEREMIAHJPG/ASASTRA_NEW.git'},
+  // { title: 'ASASTRA – Sign-up form page', iframe: 'https://asastra.vercel.app/Signupformpage', description: 'Built with Nuxt3 + Firebase', github: 'https://github.com/JEREMIAHJPG/ASASTRA_NEW.git'},
   { title: 'ASASTRA – Login form page', iframe: 'https://asastra.vercel.app/Loginpage', description: 'Built with Nuxt3 + Firebase', github: 'https://github.com/JEREMIAHJPG/ASASTRA_NEW.git'},
   { title: 'ASASTRA – Terms and Conditions policy page', iframe: 'https://asastra.vercel.app/termsandconditions', description: 'Built with Nuxt3 + Firebase', github: 'https://github.com/JEREMIAHJPG/ASASTRA_NEW.git'},
 ];

@@ -45,7 +45,7 @@ export default {
       { pagename: 'Home', routename: '/', materialdesigniconname: 'home' },
       { pagename: 'About', routename: '/About', materialdesigniconname: 'account' },
   //    { pagename: 'Projects', routename: '/projects', materialdesigniconname: 'briefcase' },
- //     { pagename: 'Contact', routename: '/contact', materialdesigniconname: 'email' }
+ //     { pagename: 'Contact', routename: '/Contact', materialdesigniconname: 'email' }
     ];
     return {
       filteredSidebars,
