@@ -1,5 +1,5 @@
 import { shallowReactive, reactive, effectScope, getCurrentScope, hasInjectionContext, getCurrentInstance as getCurrentInstance$1, inject as inject$1, toRef, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw, watch, onScopeDispose, computed, watchEffect, toRefs, capitalize, unref, Fragment, isVNode, Comment, ref, warn, provide, h, defineComponent as defineComponent$1, createVNode, mergeProps, camelize, TransitionGroup, Transition, readonly, useId, nextTick, withDirectives, resolveDirective, vShow, resolveDynamicComponent, Text, toDisplayString, markRaw, cloneVNode, Teleport, createTextVNode, withModifiers, vModelText, resolveComponent, render, defineAsyncComponent, Suspense, withCtx, useSSRContext, onErrorCaptured, onServerPrefetch, createApp } from 'vue';
-import { j as createHooks, k as getContext, l as hasProtocol, m as joinURL, w as withQuery, s as sanitizeStatusCode, h as createError$1, n as toRouteMatcher, o as createRouter, q as defu, r as executeAsync } from '../_/nitro.mjs';
+import { k as createHooks, l as getContext, m as hasProtocol, n as joinURL, w as withQuery, o as sanitizeStatusCode, i as createError$1, q as toRouteMatcher, v as createRouter, x as defu, y as executeAsync } from '../_/nitro.mjs';
 import { shouldHydrate, createPinia, setActivePinia } from 'pinia';
 import { START_LOCATION, createMemoryHistory, createRouter as createRouter$1, useRoute as useRoute$2, RouterView } from 'vue-router';
 import { logEvent } from 'firebase/analytics';
@@ -401,6 +401,11 @@ const _routes = [
     name: "index",
     path: "/",
     component: () => import('./index.vue.mjs')
+  },
+  {
+    name: "Contact",
+    path: "/Contact",
+    component: () => import('./Contact.vue.mjs')
   },
   {
     name: "CookiesPolicy",

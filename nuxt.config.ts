@@ -74,6 +74,8 @@ export default defineNuxtConfig({
       linkedInUrl: process.env.LINKEDIN_URL,
       telegramUrl: process.env.TELEGRAM_URL,
       whatsappUrl: process.env.WHATSAPP_URL,
+      Emailpass: process.env.EMAILPASS,
+      EmailUser: process.env.EMAILUSER,
     }
   },
 

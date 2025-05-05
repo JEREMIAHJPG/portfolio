@@ -819,6 +819,7 @@ function getRequestURL(event, opts = {}) {
 }
 
 const RawBodySymbol = Symbol.for("h3RawBody");
+const ParsedBodySymbol = Symbol.for("h3ParsedBody");
 const PayloadMethods$1 = ["PATCH", "POST", "PUT", "DELETE"];
 function readRawBody(event, encoding = "utf8") {
   assertMethod(event, PayloadMethods$1);
@@ -883,6 +884,26 @@ function readRawBody(event, encoding = "utf8") {
   const result = encoding ? promise.then((buff) => buff.toString(encoding)) : promise;
   return result;
 }
+async function readBody(event, options = {}) {
+  const request = event.node.req;
+  if (hasProp(request, ParsedBodySymbol)) {
+    return request[ParsedBodySymbol];
+  }
+  const contentType = request.headers["content-type"] || "";
+  const body = await readRawBody(event);
+  let parsed;
+  if (contentType === "application/json") {
+    parsed = _parseJSON(body, options.strict ?? true);
+  } else if (contentType.startsWith("application/x-www-form-urlencoded")) {
+    parsed = _parseURLEncodedBody(body);
+  } else if (contentType.startsWith("text/")) {
+    parsed = body;
+  } else {
+    parsed = _parseJSON(body, options.strict ?? false);
+  }
+  request[ParsedBodySymbol] = parsed;
+  return parsed;
+}
 function getRequestWebStream(event) {
   if (!PayloadMethods$1.includes(event.method)) {
     return;
@@ -916,6 +937,35 @@ function getRequestWebStream(event) {
       });
     }
   });
+}
+function _parseJSON(body = "", strict) {
+  if (!body) {
+    return undefined;
+  }
+  try {
+    return destr(body, { strict });
+  } catch {
+    throw createError$1({
+      statusCode: 400,
+      statusMessage: "Bad Request",
+      message: "Invalid JSON body"
+    });
+  }
+}
+function _parseURLEncodedBody(body) {
+  const form = new URLSearchParams(body);
+  const parsedForm = /* @__PURE__ */ Object.create(null);
+  for (const [key, value] of form.entries()) {
+    if (hasProp(parsedForm, key)) {
+      if (!Array.isArray(parsedForm[key])) {
+        parsedForm[key] = [parsedForm[key]];
+      }
+      parsedForm[key].push(value);
+    } else {
+      parsedForm[key] = value;
+    }
+  }
+  return parsedForm;
 }
 
 function handleCacheHeaders(event, opts) {
@@ -3933,7 +3983,7 @@ function _expandFromEnv(value) {
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "cf2bb387-f2a0-43c3-aa85-f5633a2e1199",
+    "buildId": "0d7a01db-68ed-4237-bd5b-4f59ebff517a",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -3964,7 +4014,9 @@ const _inlineRuntimeConfig = {
   "public": {
     "linkedInUrl": "https://linkedin.com/in/jeremiah-chukwuebuka-5893a3168/",
     "telegramUrl": "https://t.me/Jefocus",
-    "whatsappUrl": "https://wa.me/+2348149481777"
+    "whatsappUrl": "https://wa.me/+2348149481777",
+    "Emailpass": "yicymjrxqhvcjtbr",
+    "EmailUser": "jeremiahchukwuebukao@gmail.com"
   },
   "debug": false,
   "csp": {
@@ -4481,9 +4533,11 @@ const _IplkXK = lazyEventHandler(() => {
   return useBase(opts.baseURL, ipxHandler);
 });
 
+const _lazy_n2RwXe = () => import('../routes/api/contact-email.mjs');
 const _lazy_yaTGYi = () => import('../routes/renderer.mjs');
 
 const handlers = [
+  { route: '/api/contact-email', handler: _lazy_n2RwXe, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_error', handler: _lazy_yaTGYi, lazy: true, middleware: false, method: undefined },
   { route: '/_ipx/**', handler: _IplkXK, lazy: false, middleware: false, method: undefined },
   { route: '/**', handler: _lazy_yaTGYi, lazy: true, middleware: false, method: undefined }
@@ -4625,5 +4679,5 @@ function useNitroApp() {
 }
 runNitroPlugins(nitroApp);
 
-export { useRuntimeConfig as a, buildAssetsURL as b, getResponseStatus as c, defineRenderHandler as d, publicAssetsURL as e, getQuery as f, getResponseStatusText as g, createError$1 as h, getRouteRules as i, createHooks as j, getContext as k, hasProtocol as l, joinURL as m, toRouteMatcher as n, createRouter$1 as o, parseQuery as p, defu as q, executeAsync as r, sanitizeStatusCode as s, toNodeListener as t, useNitroApp as u, withQuery as w };
+export { useRuntimeConfig as a, buildAssetsURL as b, getResponseStatus as c, defineEventHandler as d, defineRenderHandler as e, publicAssetsURL as f, getResponseStatusText as g, getQuery as h, createError$1 as i, getRouteRules as j, createHooks as k, getContext as l, hasProtocol as m, joinURL as n, sanitizeStatusCode as o, parseQuery as p, toRouteMatcher as q, readBody as r, setResponseStatus as s, toNodeListener as t, useNitroApp as u, createRouter$1 as v, withQuery as w, defu as x, executeAsync as y };
 //# sourceMappingURL=nitro.mjs.map

@@ -35,13 +35,6 @@
 </template>
 
 <script>
-import { ref } from 'vue';
-import GalaxyEarthBackground from '@/components/GalaxyEarthBackground.vue';
-import Header from '@/components/Header.vue';
-import HeroSVG from '@/components/HeroSVG.vue';
-import Projects from '@/components/Projects.vue';
-import ContactLinks from '@/components/ContactLinks.vue';
-import MainFooter from '@/components/MainFooter.vue';
 
 export default {
   name: 'DefaultPage',

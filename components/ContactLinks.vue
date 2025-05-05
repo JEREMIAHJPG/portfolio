@@ -5,6 +5,8 @@
     <v-btn color="success" class="ma-2" :href="whatsapp">WhatsApp</v-btn>
     <v-btn color="primary" class="ma-2" :href="telegram">Telegram</v-btn>
     <v-btn color="info" class="ma-2" :href="linkedin">LinkedIn</v-btn>
+    <v-btn color="info" class="ma-2" href="/Contact">Contact</v-btn>
+
   </v-container>
 </template>
 

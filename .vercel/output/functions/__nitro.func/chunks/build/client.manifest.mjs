@@ -1,10 +1,42 @@
 const client_manifest = {
+  "_About.BMG4Q3Ph.css": {
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true,
+    "file": "About.BMG4Q3Ph.css",
+    "src": "_About.BMG4Q3Ph.css"
+  },
+  "_HDqLUmEm.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "HDqLUmEm.js",
+    "name": "About",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "dynamicImports": [
+      "node_modules/dompurify/dist/purify.es.js",
+      "node_modules/canvg/lib/index.es.js"
+    ],
+    "css": [
+      "About.BMG4Q3Ph.css"
+    ]
+  },
+  "About.BMG4Q3Ph.css": {
+    "file": "About.BMG4Q3Ph.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  },
   "layouts/default.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Edi5PcEx.js",
+    "file": "CvZq1dnC.js",
     "name": "default",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
@@ -13,8 +45,8 @@ const client_manifest = {
     ],
     "css": []
   },
-  "default.C_xiqD5f.css": {
-    "file": "default.C_xiqD5f.css",
+  "default.kFtyY3AE.css": {
+    "file": "default.kFtyY3AE.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -43,16 +75,41 @@ const client_manifest = {
     "file": "materialdesignicons-webfont.Dp5v-WZN.woff2",
     "src": "node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff2"
   },
+  "node_modules/canvg/lib/index.es.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "BNqSrCAh.js",
+    "name": "index.es",
+    "src": "node_modules/canvg/lib/index.es.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_HDqLUmEm.js",
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "node_modules/dompurify/dist/purify.es.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "C_uT9hQ1.js",
+    "name": "purify.es",
+    "src": "node_modules/dompurify/dist/purify.es.js",
+    "isDynamicEntry": true
+  },
   "node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "g7g2bBxo.js",
+    "file": "DyQxKxy1.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
     "dynamicImports": [
+      "_HDqLUmEm.js",
       "layouts/default.vue"
     ],
     "css": [
@@ -92,32 +149,25 @@ const client_manifest = {
     "resourceType": "font",
     "mimeType": "font/ttf"
   },
-  "pages/About.vue": {
+  "pages/Contact.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "yu2M-b0U.js",
-    "name": "About",
-    "src": "pages/About.vue",
+    "file": "DTCloSqD.js",
+    "name": "Contact",
+    "src": "pages/Contact.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
-    ],
-    "css": []
-  },
-  "About.D3pe2mCk.css": {
-    "file": "About.D3pe2mCk.css",
-    "resourceType": "style",
-    "prefetch": true,
-    "preload": true
+    ]
   },
   "pages/CookiesPolicy.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CN4TZ_Oh.js",
+    "file": "DisvN-EI.js",
     "name": "CookiesPolicy",
     "src": "pages/CookiesPolicy.vue",
     "isDynamicEntry": true,
@@ -137,7 +187,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CHoICXWn.js",
+    "file": "v5sDVWyD.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
@@ -146,8 +196,8 @@ const client_manifest = {
     ],
     "css": []
   },
-  "index.CGT4C3A-.css": {
-    "file": "index.CGT4C3A-.css",
+  "index.B6EMnZ-c.css": {
+    "file": "index.B6EMnZ-c.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true

@@ -1,5 +1,6 @@
 <template>
     <v-container class="py-12">
+      <div ref="resumeContent">
       <v-row>
         <v-col cols="12" md="4">
           <v-card class="pa-4 elevation-3">
@@ -93,14 +94,44 @@
           </v-card>
         </v-col>
       </v-row>
+    </div>
+    <v-row md-2 m-4 class="downloadandsend" >
+            <div style="text-align: center; align-items:center; justify-content: center;">
+              <v-btn color="primary" class="ma-2" @click="generatePDF" :href="'/Jeremiah_Chukwuebuka_Resume.pdf'" rounded download><v-icon left small>download</v-icon>Download Resume</v-btn>
+            </div>
+     </v-row>
     </v-container>
   </template>
   
-  <script setup>
+  <script>
+import { jsPDF } from 'jspdf';
+import html2canvas from 'html2canvas';
   // Feel free to add props or state here if you want to make the data dynamic in the future
+export default {
+    name: 'About',
+    data() {
+      return {
+        // Add any data properties you need here
+      };
+    },
+    methods: {
+      generatePDF() {
+        // Logic to generate PDF if needed, or just use the link in the button
+        const pdf = new jsPDF();
+      const content = this.$refs.resumeContent;
+      
+      html2canvas(content).then((canvas) => {
+        const imgData = canvas.toDataURL("image/png");
+        pdf.addImage(imgData, "PNG", 10, 10, 180, 160);
+        pdf.save("Jeremiah-Chukwuebuka-Resume-CV.pdf");
+      });
+      }
+    }
+  };
   </script>
   
   <style scoped>
+
   a {
     color: #1976d2;
     text-decoration: none;
