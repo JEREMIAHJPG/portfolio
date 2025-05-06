@@ -35,11 +35,12 @@
 </template>
 
 <script>
-
+import { Analytics } from '@vercel/analytics/nuxt'
 export default {
   name: 'DefaultPage',
   components: { },
   setup() {
+    const drawer = ref(false);
 
     const filteredSidebars = [
       { pagename: 'Home', routename: '/', materialdesigniconname: 'home' },
@@ -48,6 +49,7 @@ export default {
  //     { pagename: 'Contact', routename: '/Contact', materialdesigniconname: 'email' }
     ];
     return {
+      drawer,
       filteredSidebars,
  
     };

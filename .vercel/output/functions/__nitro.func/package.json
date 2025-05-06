@@ -14,6 +14,7 @@
     "@firebase/logger": "0.4.4",
     "@firebase/util": "1.11.0",
     "@trysound/sax": "0.2.0",
+    "@vercel/analytics": "1.5.0",
     "@vue/compiler-core": "3.5.13",
     "@vue/compiler-dom": "3.5.13",
     "@vue/compiler-ssr": "3.5.13",

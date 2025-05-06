@@ -60,7 +60,6 @@ export default {
     MainFooter
   },
   setup() {
-    const drawer = ref(false);
 
     const filteredSidebars = [
       { pagename: 'Home', routename: '/', materialdesigniconname: 'home' },
