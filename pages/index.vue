@@ -1,7 +1,6 @@
 <template>
     <div>
 <v-container>
-    <Header :drawer="drawer" @toggle-drawer="drawer = !drawer" />
     <v-btn color="success"
         
         size="large" rounded 
@@ -60,7 +59,7 @@ export default {
     MainFooter
   },
   setup() {
-
+const drawer = ref(false);
     const filteredSidebars = [
       { pagename: 'Home', routename: '/', materialdesigniconname: 'home' },
       { pagename: 'About', routename: '/About', materialdesigniconname: 'account' },

@@ -29,6 +29,8 @@
 
     <!-- 🌐 Main Content -->
     <v-main>
+      <Header :drawer="drawer" @toggle-drawer="drawer = !drawer" />
+      <Analytics />
       <slot />
     </v-main>
   </v-app>
