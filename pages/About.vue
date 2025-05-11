@@ -14,7 +14,7 @@
               <v-list-item><v-icon class="mr-2">mdi-email</v-icon>jeremiahchukwuebukao@gmail.com</v-list-item>
               <v-list-item><v-icon class="mr-2">mdi-phone</v-icon>+2348149481777</v-list-item>
               <v-list-item><v-icon class="mr-2">mdi-link</v-icon><a href="https://asastra-dev.vercel.app" target="_blank">Portfolio</a></v-list-item>
-              <v-list-item><v-icon class="mr-2">mdi-linkedin</v-icon><a href="https://linkedin.com/in/jeremiah-chukwuebuka-5893a3168/" target="_blank">LinkedIn</a></v-list-item>
+              <v-list-item><v-icon class="mr-2">mdi-linkedin</v-icon><a href="https://linkedin.com/in/jeremiah-okpala-5893a3168/" target="_blank">LinkedIn</a></v-list-item>
               <v-list-item><v-icon class="mr-2">mdi-github</v-icon><a href="https://github.com/JEREMIAHJPG/portfolio.git" target="_blank">GitHub</a></v-list-item>
             </v-list>
           </v-card>
@@ -33,7 +33,7 @@
             <h3 class="text-h6 font-weight-bold mb-2">Technical Skills</h3>
             <ul>
               <li><strong>Languages & Frameworks:</strong> HTML5, CSS3, JavaScript (ES6+), Vue.js, Nuxt 3, Node.js, Python, MongoDB, MySQL, Firebase, Vuex, Pinia, Bootstrap, WordPress</li>
-              <li><strong>Platforms & Tools:</strong> Vercel, Firebase Hosting, GitHub, GitHub Actions, VS Code, Postman, Google Analytics, Google AdSense, Paystack, Yoast SEO</li>
+              <li><strong>Platforms & Tools:</strong> Vercel, Firebase Hosting, GitHub, GitHub Actions, VS Code, Postman, Google Analytics, Google AdSense, Paystack, Yoast SEO, SEMrush</li>
               <li><strong>Design & Analytics:</strong> Photoshop, CorelDraw, Canva, Tableau, Jupyter, Power BI</li>
               <li><strong>Systems & IT:</strong> Windows OS setup, monitoring, troubleshooting</li>
             </ul>
