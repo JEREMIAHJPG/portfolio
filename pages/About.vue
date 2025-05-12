@@ -24,15 +24,14 @@
           <v-card class="pa-6 elevation-2 mb-6">
             <h3 class="text-h6 font-weight-bold mb-2">Summary</h3>
             <p>
-              Proactive and creative Full Stack Software Developer with over 3 years of coding experience, 4+ years in digital marketing, and 10+ years in graphic design.
-              Adept at building scalable, secure, and SEO-optimized web applications using Vue.js, Nuxt 3, Firebase, and Node.js. Known for mentoring junior developers, managing large projects, and delivering high-performance solutions.
+Proactive and creative Full Stack Software Developer with over 3 years of coding experience, 4+ years in digital marketing, and 10+ years in graphic design. Adept at building scalable, secure, and SEO-optimized web applications using Vue.js, Nuxt 3, Firebase, and Node.js. Experienced in managing full project lifecycles—from concept to deployment—while integrating modern UI/UX designs and analytics tracking. Known for mentoring junior developers, managing large projects, and delivering client-focused, high-performance solutions. I am passionate, a fast learner, and ready for global work.
             </p>
           </v-card>
   
           <v-card class="pa-6 elevation-2 mb-6">
             <h3 class="text-h6 font-weight-bold mb-2">Technical Skills</h3>
             <ul>
-              <li><strong>Languages & Frameworks:</strong> HTML5, CSS3, JavaScript (ES6+), Vue.js, Nuxt 3, Node.js, Python, MongoDB, MySQL, Firebase, Vuex, Pinia, Bootstrap, WordPress</li>
+              <li><strong>Languages & Frameworks:</strong> HTML5, CSS3, JavaScript (ES6+), Vue.js, Nuxt 3, Node.js, Firebase (Auth, Firestore, Analytics), Python, MongoDB, MySQL, Vuex, Pinia, Bootstrap, WordPress</li>
               <li><strong>Platforms & Tools:</strong> Vercel, Firebase Hosting, GitHub, GitHub Actions, VS Code, Postman, Google Analytics, Google AdSense, Paystack, Yoast SEO, SEMrush</li>
               <li><strong>Design & Analytics:</strong> Photoshop, CorelDraw, Canva, Tableau, Jupyter, Power BI</li>
               <li><strong>Systems & IT:</strong> Windows OS setup, monitoring, troubleshooting</li>

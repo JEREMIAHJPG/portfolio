@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   ssr: true,
 
   nitro: {
-    // preset: "vercel", // ✅ Vercel for SSR
+    preset: "vercel", // ✅ Vercel for SSR
 
     externals: {
       inline: ['@fast-csv/format']
